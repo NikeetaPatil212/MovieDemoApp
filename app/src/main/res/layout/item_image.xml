@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_12sdp"
+    android:layout_marginTop="@dimen/_6sdp"
+    android:layout_marginEnd="@dimen/_12sdp"
+    android:layout_marginBottom="@dimen/_6sdp"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:cardElevation="@dimen/_4sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Secondconstraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgMovie"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_toofaan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tvLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintTop_toBottomOf="@id/imgMovie"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Telugu"/>
+
+            <TextView
+                android:id="@+id/tvMovieTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLanguage"
+                tools:text="Anthakshari" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
